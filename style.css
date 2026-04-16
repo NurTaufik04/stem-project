@@ -1,4 +1,4 @@
-/* Menggunakan font Calibri sesuai instruksi poin 40 */
+/* Menggunakan font Calibri sesuai instruksi */
 body {
     font-family: 'Calibri', 'Segoe UI', sans-serif;
     background-color: #f4f7f9;
@@ -52,6 +52,44 @@ nav ul li a:hover { color: #27ae60; }
     border-radius: 4px;
     font-size: 0.75rem;
     font-weight: bold;
+}
+
+/* Daftar 17 SDGs dengan Ikon */
+.sdg-list-section {
+    margin: 25px 0;
+}
+
+.sdg-mini-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    font-size: 0.85rem;
+}
+
+.sdg-mini-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.sdg-mini-list li:hover {
+    border-color: #27ae60;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.sdg-icon-mini {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 /* Header Spesifik SDG 2 */
